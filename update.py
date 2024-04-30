@@ -17,6 +17,7 @@ def app():
     email = login.email_fn()
 
     st.title("Edit Profile")
+    st.text(f"{email}")
 
     name = st.text_input("Edit Name")
 

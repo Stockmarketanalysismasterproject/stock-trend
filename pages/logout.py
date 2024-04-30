@@ -1,7 +1,7 @@
 import streamlit as st
 from sqlalchemy import text
 
-=
+
 from utils import *
 
 import sys
@@ -11,8 +11,9 @@ import os
 parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(parent_dir)
 
-# Now you can import index.py
-from stock-project import index
+
+from stock_trend import index
+from stock_trend import login
 
 
 st.success("Loged Out Successfully")
